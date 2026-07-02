@@ -1,0 +1,6 @@
+.DS_Store
+.Rhistory
+.vscode/
+__pycache__/
+*.pyc
+*.class
