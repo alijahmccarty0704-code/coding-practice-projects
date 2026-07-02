@@ -29,16 +29,22 @@ All support scenarios and records use fake, generic data. No employer, customer,
 
 ## Running The Projects
 
-Python projects:
+### Python Projects
+
+Run each Python project from the repository root:
 
 ```bash
-python3 path/to/project.py
-```
+python3 python/ticket-triage/ticket_triage.py
+python3 python/password-reset-queue/passwordreset.py
+python3 python/failed-login-analyzer/failed_login_analyzer.py
 
 Java projects:
 
-```bash
-cd path/to/java/project
-javac ProjectName.java
-java ProjectName
-```
+cd java/help-desk-checklist
+javac HelpDeskChecklist.java
+java HelpDeskChecklist
+cd java/device-inventory-checker
+javac DeviceInventoryChecker.java
+java DeviceInventoryChecker
+
+This repository is actively being built as part of my software development and IT learning journey. Future updates may include additional CLI projects, improved testing, and more detailed documentation.
