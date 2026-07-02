@@ -1,83 +1,48 @@
-# Python Knowledge Check 4: Fake Password Reset Queue
+# Password Reset Queue
 
-Build this from scratch. Use fake practice data only. Do not use real workplace accounts, usernames, ticket numbers, customer names, internal systems, screenshots, or restricted details.
+A Python command-line application for managing a temporary queue of fake password-reset requests.
 
-## Scenario
+## Features
 
-Create a small CLI app for managing fake password reset requests.
+- Adds one or more fake reset requests.
+- Displays pending requests with user-facing numbers.
+- Marks a request complete by its displayed number.
+- Removes completed requests from the pending queue.
+- Handles invalid menu choices and out-of-range request numbers.
+- Returns to the main menu after each action.
 
-## Required Features
+## Technical Highlights
 
-- Show a main menu.
-- Add a fake reset request.
-- View all pending requests.
-- Mark a request complete by number.
-- Exit the app.
+- Python lists and dynamic appends
+- Zero-based indexes mapped from user-facing numbers
+- Nested `while` loops
+- Helper functions that parse numeric input
+- Empty-list and bounds validation
+- `if` / `elif` / `else` control flow
 
-## Rules
+## Run
 
-- Store requests in a list.
-- Each request should include a fake name or label and a short fake reason.
-- Do not crash on invalid menu input.
-- Do not crash if the user tries to complete a request number that does not exist.
-- After each action, return to the main menu.
+From the repository root:
 
-## Concepts To Practice
+```bash
+python3 python/password-reset-queue/passwordreset.py
+```
 
-- `input()`
-- strings
-- lists
-- indexes
-- helper functions
-- `while` loops
-- `if` / `elif` / `else`
-- numeric input validation
-- Git status, diff, staging, and commits
-
-## Manual Tests
-
-Test these flows:
+## Example Workflow
 
 ```text
-view when list is empty
-add one request
-view list
-complete request 1
-view list again
-invalid menu input
-invalid complete number
-exit
+1. Add request
+2. View pending requests
+3. Mark as complete
+4. Exit
 ```
 
-Expected behavior:
+A user can add a fictional request, view it as item `1`, then select item `1` to remove it from the pending queue.
 
-- Empty list prints a clear message.
-- Added requests appear in the pending list.
-- Completing a request removes it or marks it complete.
-- Invalid inputs print a helpful message and keep the app running.
-- Exit ends cleanly.
+## Current Scope
 
-## Git Checkpoints
+Requests are stored in memory and reset when the application exits. File or database persistence is a possible future improvement.
 
-From the workspace root:
+## Data Safety
 
-```bash
-git status
-git diff
-git add lifeloom-python-setup/python-hour/knowledge-checks/04-password-reset-queue/README.md
-git diff --staged
-git commit -m "Add Python password reset queue instructions"
-```
-
-After you create the app file:
-
-```bash
-git status
-git diff
-git add lifeloom-python-setup/python-hour/knowledge-checks/04-password-reset-queue
-git diff --staged
-git commit -m "Add Python password reset queue practice"
-git log --oneline -3
-```
-
-Before committing, explain what changed and why it is safe to save.
+All request labels and reasons should remain fictional. The project contains no real accounts, ticket numbers, or workplace information.
