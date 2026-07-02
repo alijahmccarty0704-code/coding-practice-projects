@@ -23,7 +23,6 @@ All support scenarios and records use fake, generic data. No employer, customer,
 - Lists, nested records, and arrays
 - Menu, `for`, and `while` loops
 - Counting, searching, and index mapping
-- Python unit and CLI testing
 - Java compilation and JVM execution
 - Git staging, commits, and repository hygiene
 
