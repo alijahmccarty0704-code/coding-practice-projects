@@ -27,9 +27,9 @@ All support scenarios and records use fake, generic data. No employer, customer,
 - Java compilation and JVM execution
 - Git staging, commits, and repository hygiene
 
-## Running The Projects
+## Running the Projects
 
-### Python Projects
+### Python
 
 Run each Python project from the repository root:
 
@@ -37,14 +37,24 @@ Run each Python project from the repository root:
 python3 python/ticket-triage/ticket_triage.py
 python3 python/password-reset-queue/passwordreset.py
 python3 python/failed-login-analyzer/failed_login_analyzer.py
+```
 
-Java projects:
+### Java
 
+Run each Java project from the repository root:
+
+```bash
 cd java/help-desk-checklist
 javac HelpDeskChecklist.java
 java HelpDeskChecklist
+```
+
+```bash
 cd java/device-inventory-checker
 javac DeviceInventoryChecker.java
 java DeviceInventoryChecker
+```
 
-This repository is actively being built as part of my software development and IT learning journey. Future updates may include additional CLI projects, improved testing, and more detailed documentation.
+## Future Development
+
+This repository is actively being developed as part of my software development and IT learning journey. Future updates may include additional CLI projects, improved testing, and more detailed documentation.
